@@ -25,8 +25,7 @@ Tcl GPGME provides a Tcl interface to the GnuPG Made Easy library.
 %{__aclocal} -I config
 %{__automake}
 %{__autoconf}
-%configure \
-	--with-ssl-dir=/usr
+%configure
 %{__make}
 
 %install
