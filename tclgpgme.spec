@@ -6,6 +6,7 @@ Release:	1
 License:	distributable
 Group:		Development/Languages/Tcl
 Source0:	http://beepcore-tcl.sourceforge.net/%{name}-%{version}.tgz
+# Source0-md5:	a718a6ee2ac65e79437c5d09a7382ce8
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-automake.patch
 BuildRequires:	autoconf
