@@ -1,0 +1,10 @@
+--- tclgpgme-1.0.orig/configure.in	Wed Sep 25 21:49:42 2002
++++ tclgpgme-1.0/configure.in	Sat Jan 11 18:36:20 2003
+@@ -14,6 +14,7 @@
+ 
+ AC_INIT(tclgpgme.c)
+ AC_CONFIG_AUX_DIR(config)
++AM_INIT_AUTOMAKE(tclgpgme,1.0)
+ CONFIGDIR=${srcdir}/config
+ AC_SUBST(CONFIGDIR)
+ AC_PROG_CC
