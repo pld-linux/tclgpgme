@@ -9,7 +9,7 @@ Source0:	http://beepcore-tcl.sourceforge.net/%{name}-%{version}.tgz
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-automake.patch
 BuildRequires:	tcl-devel
-BuildRequires:	gpgme-devel
+BuildRequires:	gpgme-devel >= 0.3.11
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,8 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR="$RPM_BUILD_ROOT"
-rm -f $RPM_BUILD_ROOT%{_includedir}/*
-
+rm $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -42,4 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS doc/*.html
-%{_libdir}/*
+%{_libdir}/gpgme*
+%{_libdir}/lib*.so
+%{_libdir}/lib*.so.*.*
