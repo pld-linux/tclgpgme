@@ -11,7 +11,8 @@ Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-automake.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gpgme-devel >= 0.3.11
+BuildRequires:	gpgme-devel >= 1:0.3.11
+BuildRequires:	gpgme-devel < 1:0.4.0
 BuildRequires:	libtool
 BuildRequires:	tcl-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
