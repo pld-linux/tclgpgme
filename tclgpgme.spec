@@ -1,5 +1,5 @@
 Summary:	Tcl interface to the GnuPG Made Easy library
-Summary(pl):	Interfejs Tcl do biblioteki GnuPG Made Easy
+Summary(pl.UTF-8):   Interfejs Tcl do biblioteki GnuPG Made Easy
 Name:		tclgpgme
 Version:	1.0
 Release:	1
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Tcl GPGME provides a Tcl interface to the GnuPG Made Easy library.
 
-%description -l pl
-Tcl GPGME udostêpnia interfejs Tcl do biblioteki GnuPG Made Easy.
+%description -l pl.UTF-8
+Tcl GPGME udostÄ™pnia interfejs Tcl do biblioteki GnuPG Made Easy.
 
 %prep
 %setup -q
